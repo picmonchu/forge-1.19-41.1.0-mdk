@@ -14,7 +14,7 @@ public class ModItems {
     public static final RegistryObject<Item> USED_MEDS = Items.register("used_meds",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.GOOBER_TAB)));
     public static final RegistryObject<Item> MEDS = Items.register("meds",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.GOOBER_TAB)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.GOOBER_TAB).food(ModFoods.MEDS)));
 
     public static void register(IEventBus eventBus) {
         Items.register(eventBus);
